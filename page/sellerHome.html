@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0">
+		<title>待出售</title>
+		<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.Comm.configScreen();
+		</script>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+	<style type="text/css">
+	body{
+		padding-bottom: 4.9rem;
+	}
+		.list{
+			background: #FFFFFF;
+			padding-left: 2.4rem;
+			padding-right: 2.4rem;
+		}
+		.messageList{
+			display: -webkit-box;
+			-webkit-box-align: center;
+			padding: 3.2rem 0rem 2rem 0;
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+		}
+		.listIcon{
+			display: block;
+			height: 2.5rem;
+			width: 2.5rem;
+			background: #f2f2f2;
+			margin-right: 0.7rem;
+		}
+		.listMessage{
+			font-size: 1.8rem;
+			color: #262630;
+			-webkit-box-flex: 1;
+		}
+		.listDetail{
+			font-size: 1.8rem;
+			color: #FF6464;
+		}
+		.btn{
+			text-align: center;
+			margin-top: 4.4rem;
+		}
+		.add-btn{
+			height: 5.6rem;
+			width: 87.2%;
+			background: #FF6464;
+			text-align: center;
+			font-size: 1.8rem;
+			color: #fff;
+			border-radius: 0.2rem;
+			
+		}
+		.tabBar{
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 4.9rem;
+			display: -webkit-box;
+			-webkit-box-align: center;
+			-webkit-box-pack: center;
+			background: #f6f8fa;
+			
+		}
+		.bar1,.bar2{
+			margin-left: 5.55rem;
+			margin-right: 5.55rem;
+		}
+		.bar1{
+			height: 2.4rem;
+			width: 2.1rem;
+			background: #FF6464;
+		}
+		.bar2{
+			height: 2.5rem;
+			width: 2.5rem;
+			background: #FF6464;
+		}
+	</style>
+	</head>
+	<body>
+		<ul class="list">
+			<li class="messageList">
+				<i class="listIcon"></i>
+				<p class="listMessage">消息中心</p>
+				<p class="listDetail"><span>3</span>条新消息</p>
+			</li>
+			<li class="messageList">
+				<i class="listIcon"></i>
+				<p class="listMessage">带出售</p>
+				<p class="listDetail">7</p>
+			</li>
+			<li class="messageList">
+				<i class="listIcon"></i>
+				<p class="listMessage">已出售</p>
+				<p class="listDetail">3</p>
+			</li>
+			<li class="messageList">
+				<i class="listIcon"></i>
+				<p class="listMessage">收到的款项</p>
+				<p class="listDetail">24k</p>
+			</li>
+			<li class="messageList">
+				<i class="listIcon"></i>
+				<p class="listMessage">未到账</p>
+				<p class="listDetail">5.4k</p>
+			</li>
+		</ul>
+		<div class="btn">
+			<button class="add-btn">添加宠物</button>
+		</div>
+		<ul class="tabBar">
+			<li class="bar1"></li>
+			<li class="bar2"></li>
+		</ul>
+	</body>
+</html>

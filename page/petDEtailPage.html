@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0">
+		<title></title>
+		<script type="text/javascript">
+			var page = window;
+			page.onload = function() {
+				response()
+			}
+			page.addEventListener('resize',response,false);
+			function response(){
+				var o_width=document.documentElement.getBoundingClientRect().width
+				var h=document.querySelector('html');
+				h.style.fontSize=o_width/37.5+'px'
+			}
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0">
+		<title>待出售</title>
+		<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.Comm.configScreen();
+		</script>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<style type="text/css">
+			body{
+				padding-bottom: 5.6rem;
+				background: #F2F4FC;
+			}
+			.petList{
+				padding-left: 1.6rem;
+				background: #fff;
+			}
+			.sellList{
+				display: -webkit-box;
+				height: 11.2rem;
+				padding-top: 1.6rem;
+				border-bottom: 1px solid rgba(0,0,0,0.1);
+			}
+			.petImg{
+				display: block;
+				height: 8rem;
+				width: 12rem;
+				background: #f2f4fc;
+			}
+			.petImg>img{
+				height: 100%;
+				width: 100%;
+			}
+			.petDetail{
+				margin-left: 1.2rem;
+			}
+			.petName{
+				font-size: 1.6rem;
+				color: #262630;
+				display: -webkit-box;
+				-webkit-box-align:center;
+			}
+			.state{
+				font-size: 1.4rem;
+				color: #ff6464;
+				margin-top: 0.4rem;
+			}
+			.detail1,.detail2{
+				font-size: 1.4rem;
+				color: #262630;
+				margin-top: 0.4rem;
+			}
+			.btn{
+				position: fixed;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 3;
+			}
+			.add-btn{
+				text-align: center;
+				background: #ff6464;
+				height: 5.6rem;
+				font-size: 1.8rem;
+				color: #fff;
+				width: 100%;
+			}
+			.icon{
+				display: inline-block;
+				margin-left: 1.2rem;
+				height: 1.6rem;
+				width: 1.6rem;
+				background: #F2F4FC;
+				border-radius: 50%;
+			}
+			.select{
+				height:2.8rem ;
+				width: 2.8rem;
+				border: 2px solid #262630;
+				border-radius: 50%;
+				margin-top: 2.6rem;
+				margin-right: 1.6rem;
+			}
+			.hasSell-btn{
+				background: #d6d6d6;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="petList">
+			<li class="sellList">
+				<div class="select"></div>
+				<i class="petImg"></i>
+				<div class="petDetail">
+					<div class="petName"><p>RA布偶猫舍的宠物</p></div>
+					<p class="state">还差5步·待发布</p>
+				</div>
+			</li>
+			<li class="sellList">
+				<div class="select"></div>
+				<i class="petImg"></i>
+				<div class="petDetail">
+					<div class="petName"><p>RA布偶猫舍的宠物</p><i class="icon"></i></div>
+					<p class="state">完成·待发布</p>
+				</div>
+			</li>
+			<li class="sellList">
+				<div class="select"></div>
+				<i class="petImg"></i>
+				<div class="petDetail">
+					<div class="petName"><p>RA布偶猫舍的宠物</p><i class="icon"></i></div>
+					<p class="detail1">花色：<span>蓝白</span></p>
+					<p class="detail2">价格：<span>￥12000</span></p>
+				</div>
+			</li>
+		</ul>
+		
+		<div class="btn">
+			<!--<button class="add-btn">添加</button>-->
+			<button class="add-btn hasSell-btn">已售出（0）</button>
+		</div>
+	</body>
+</html>

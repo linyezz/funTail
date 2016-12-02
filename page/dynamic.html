@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0">
+		<title>动态</title>
+		<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.Comm.configScreen();
+		</script>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+	<style type="text/css">
+	body{
+		background: #F2F4FC;
+	}
+	
+	.content{
+		background: #fff;
+		margin-bottom: 1.2rem;
+	}
+		.head{
+			display: -webkit-box;
+			-webkit-box-align: center;
+			height: 5.2rem;
+			padding-left: 1.2rem;
+			padding-right: 1.2rem;
+			background: #fff;
+		}
+		.headLeft{
+			-webkit-box-flex: 1;
+			display: -webkit-box;
+			-webkit-box-align: center;
+		}
+		.userHead{
+			display: block;
+			height: 3.6rem;
+			width: 3.6rem;
+			background: #70E48C;
+			border-radius: 50%;
+		}
+		.userHead>img{
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+		}
+		.userName{
+			opacity: 0.8;
+			font-size:1.4rem;
+			color: #262630;
+			letter-spacing: 0px;
+			margin-left: 0.8rem;
+			margin-right: 0.4rem;
+		}
+		.headIcon{
+			display: block;
+			height: 1.2rem;
+			width: 1.2rem;
+			background: #F2F4FC;
+			border-radius: 50%;
+		}
+		.headRight{
+			opacity: 0.47;
+			font-size: 1.2rem
+			color: #262630;
+		}
+		.petPic{
+			width: 100%;
+			height: 25rem;
+			background: #fc6676;
+		}
+		.petPic>img{
+			width: 100%;
+			height: 100%;
+		}
+		.picTip{
+			opacity: 0.8;
+			font-size: 1.6rem;
+			color: #262630;
+			padding: 1.6rem 1.6rem 0rem 1.6rem;
+		}
+		.share{
+			padding: 1.6rem 0 2rem 1.6rem;
+			margin: 0 1.6rem 0 1.6rem;
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			display: -webkit-flex;
+			-webkit-justify-content: space-around;
+		}
+		.shareDetail{
+			height: 3.5rem;
+			width: 3.5rem;
+			border: 0.05rem solid rgba(38,38,48,0.32);
+			border-radius:50%;
+		}
+		.thumbsUp{
+			display: -webkit-box;
+			-webkit-box-align: center;
+			padding: 1.2rem 1.6rem 0rem 1.6rem;
+		}
+		.thumbsUser{
+			display: -webkit-box;
+			min-width: 0;
+			max-width: 26.6rem;
+			overflow: hidden;
+		}
+		.thumbsHead{
+			width: 2.6rem;
+			height: 2.6rem;
+			border-radius: 50%;
+			background: #6490FE;
+			margin-right: 1.2rem;
+			
+		}
+		.comment{
+			padding:1.6rem;
+		}
+		.otherComment{
+			text-align:right;
+			opacity: 0.8;
+			font-size: 1.2rem;
+			color: #3EC0FE;
+		}
+		.otherComment:active{
+			text-decoration: underline;
+		}
+		.commentList{
+			display: -webkit-box;
+			-webkit-box-align: center;
+			margin-bottom: 0.6rem;
+		}
+		.commentTip{
+			font-size: 1.4rem;
+			color: #888C92;
+			-webkit-box-flex: 1;
+			text-indent: 1.4rem;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		.commentName{
+			font-size: 1.4rem;
+			color: #262630;
+		}
+	</style>
+	</head>
+	<body>
+		<section class="content">
+		<header class="head">
+			<div class="headLeft">
+				<i class="userHead"></i>
+				<p class="userName">妙蛙种子</p>
+				<i class="headIcon"></i>
+			</div>
+			<p class="headRight">5分钟前</p>
+		</header>
+		
+		<div class="petPic"></div>
+		<p class="picTip">看着宝贝发呆的模样，忍不住随手拍了两张</p>
+		<div>
+		<ul class="share">
+			<li class="shareDetail"></li>
+			<li class="shareDetail"></li>
+			<li class="shareDetail"></li>
+		</ul>
+		</div>
+		<div class="thumbsUp">
+			<ul class="thumbsUser">
+				<li class="thumbsHead"></li>
+				<li class="thumbsHead"></li>
+				<li class="thumbsHead"></li>
+				<li class="thumbsHead"></li>
+				<li class="thumbsHead"></li>
+				<li class="thumbsHead"></li>
+				<li class="thumbsHead"></li>
+				<li class="thumbsHead"></li>
+				<li class="thumbsHead"></li>
+			</ul>
+			<p class="thumbsNum">48赞</p>
+		</div>
+		
+		<div class="comment">
+			<dl class="commentList">
+				<dt class="commentName">付媛媛    </dt>
+				<dd class="commentTip"> 萌宝好可爱</dd>
+			</dl>
+			<dl class="commentList">
+				<dt class="commentName">付媛媛    </dt>
+				<dd class="commentTip"> 萌宝好可爱dsddssffsfwefwefwssfsefwefewfewfewfewfewfwefewfew</dd>
+			</dl>
+			<dl class="commentList">
+				<dt class="commentName">付媛媛    </dt>
+				<dd class="commentTip"> 萌宝好可爱</dd>
+			</dl>
+			
+			<p class="otherComment">展开所有6条评论 ></p>
+		</div>
+	</section>
+	
+	<section class="content">
+		<header class="head">
+			<div class="headLeft">
+				<i class="userHead"></i>
+				<p class="userName">妙蛙种子</p>
+				<i class="headIcon"></i>
+			</div>
+			<p class="headRight">5分钟前</p>
+		</header>
+		
+		<div class="petImg"></div>
+		<p class="picTip">看着宝贝发呆的模样，忍不住随手拍了两张</p>
+		<div>
+		<ul class="share">
+			<li class="shareDetail"></li>
+			<li class="shareDetail"></li>
+			<li class="shareDetail"></li>
+		</ul>
+		</div>
+		<div class="thumbsUp">
+			<ul class="thumbsUser">
+				<li class="thumbsHead"></li>
+				<li class="thumbsHead"></li>
+				<li class="thumbsHead"></li>
+				<li class="thumbsHead"></li>
+				<li class="thumbsHead"></li>
+				<li class="thumbsHead"></li>
+				<li class="thumbsHead"></li>
+				<li class="thumbsHead"></li>
+				<li class="thumbsHead"></li>
+			</ul>
+			<p class="thumbsNum">48赞</p>
+		</div>
+		
+		<div class="comment">
+			<dl class="commentList">
+				<dt class="commentName">付媛媛    </dt>
+				<dd class="commentTip"> 萌宝好可爱</dd>
+			</dl>
+			<dl class="commentList">
+				<dt class="commentName">付媛媛    </dt>
+				<dd class="commentTip"> 萌宝好可爱dsddssffsfwefwefwssfsefwefewfewfewfewfewfwefewfew</dd>
+			</dl>
+			<dl class="commentList">
+				<dt class="commentName">付媛媛    </dt>
+				<dd class="commentTip"> 萌宝好可爱</dd>
+			</dl>
+			
+			<p class="otherComment">展开所有6条评论 ></p>
+		</div>
+	</section>
+	</body>
+</html>

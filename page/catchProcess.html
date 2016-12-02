@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0">
+		<title></title>
+		<script type="text/javascript">
+			var page = window;
+			page.onload = function() {
+				response()
+			}
+			page.addEventListener('resize',response,false);
+			function response(){
+				var o_width=document.documentElement.getBoundingClientRect().width
+				var h=document.querySelector('html');
+				h.style.fontSize=o_width/37.5+'px'
+			}
+		</script>
+		<style type="text/css">
+			*{padding: 0;margin: 0;}
+			*{margin:0;padding:0;-webkit-box-sizing:border-box;}
+			ul,ol,li{list-style:none;text-indent:0;}
+			a,a:link,a:active,a:visited,a:hover{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+			img{border:none;}
+			button,input,select,textarea{font-size:100%;background-color:transparent;border:none;outline:none;}
+			input::-webkit-input-placeholder，textarea:input::-webkit-input-placeholder{color:#bcbcbc;}
+			input:focus::-webkit-input-placeholder{color:transparent;}
+			input{background:none;-webkit-appearance:none;}
+			textarea{resize:none;}
+			p,div{word-break:break-all;}
+			i{font-style:normal;}
+			body{
+				padding-bottom: 5.6rem;
+			}
+			.catch-title{
+				padding: 1.6rem 2.5rem 1.6rem 2.4rem;
+				font-size: 2.6rem;
+				color: #262630;
+				letter-spacing: 0.62px;
+				line-height: normal;
+			}
+			.catchCue{
+				opacity: 0.8;
+				font-size: 1.8rem;
+				color: #262630;
+				letter-spacing: 0.43px;
+				padding-left: 2.4rem;
+				padding-bottom: 1rem;
+			}
+			.list{
+				background: #fff;
+				padding-left: 2.4rem;
+				padding-right: 2.4rem;
+			}
+			.infoList{
+				padding-top:3.35rem;
+				padding-bottom: 2.15rem;
+				border-bottom: 1px solid rgba(0,0,0,0.1);
+				display: -webkit-box;
+				-webkit-box-align: center;
+			}
+			.infoDetail{
+				font-size: 1.8rem;
+				color: #262630;
+				-webkit-box-flex:1;
+			}
+			.infoIcon{
+				display: block;
+				height: 2.8rem;
+				width: 2.8rem;
+				border-radius: 0.2rem;
+				background: #F2F4FC;
+			}
+			.infoIcon>img{
+				width: 100%;
+				height: 100%;
+			}
+			.btn{
+				position:fixed;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				
+			}
+			.contion-btn{
+				background: #34DAA8;
+				height: 5.6rem;
+				text-align: center;
+				color: #fff;
+				font-size: 1.8rem;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="catch-title">准备好捕获RA布偶猫舍的英国短毛猫</p>
+		<p class="catchCue">您需要先完善自己的一些基本信息</p>
+		<ul class="list">
+			<li class="infoList">
+				<p class="infoDetail">登录/注册</p>
+				<i class="infoIcon"></i>
+			</li>
+			<li class="infoList">
+				<p class="infoDetail">绑定手机</p>
+				<i class="infoIcon"></i>
+			</li>
+			<li class="infoList">
+				<p class="infoDetail">收宠地址</p>
+				<i class="infoIcon"></i>
+			</li>
+		</ul>
+		
+		<div class="btn">
+			<button class="contion-btn">继续</button>
+		</div>
+	</body>
+</html>
