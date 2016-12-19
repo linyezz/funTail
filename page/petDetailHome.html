@@ -448,7 +448,7 @@
 			e.preventDefault(); 
 			moveX=e.touches[0].pageX-startX;
 			skrollX=moveX-((showNum-1)*picWidth);
-			showPic.style.webkitTransform="translate("+skrollX+"px)";
+			showPic.style.webkitTransform="translate3d("+skrollX+"px,0,0)";
 			showPic.style.webkitTransitionDuration="0s"
 			/*console.log('moveX:'+moveX);
 			console.log('skrollX:'+skrollX);*/
@@ -472,8 +472,9 @@
 			}
 			}
 			var endWidth=picWidth*(showNum-1);
-			showPic.style.webkitTransform="translate("+-endWidth+"px)";
+			showPic.style.webkitTransform=showPic.style.transform="translate3d("+-endWidth+"px,0,0)";
 			showPic.style.webkitTransition="webkitTransform,0.5s";
+			showPic.style.transition="transform,0.5s";
 			innerhml();
 		}
 		
